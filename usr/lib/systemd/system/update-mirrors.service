@@ -1,5 +1,5 @@
 [Unit]
-Description=updates the Arch Linux mirrors
+Description=updating the Arch Linux mirrors
 After = network-online.target
 
 [Service]
@@ -7,4 +7,4 @@ Type=oneshot
 ExecStart=/usr/local/bin/update-mirrors
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
